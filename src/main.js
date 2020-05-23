@@ -1,3 +1,4 @@
+import 'babel-polyfill'
 import Vue from 'vue'
 import VueDND from 'awe-dnd'
 import VueRouter from 'vue-router'

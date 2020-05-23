@@ -24,7 +24,7 @@ var server = new webpackDevServer(compiler, {
             }
         },
         '/api': {
-            target: 'http://39.104.168.167:8080',
+            target: 'http://47.105.160.157:8080',
             changeOrigin: true,
             pathRewrite: {
                 '^/api': '/api'

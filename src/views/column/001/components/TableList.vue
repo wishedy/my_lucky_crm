@@ -5,7 +5,6 @@
             border
             highlight-current-row
             :default-sort = "{prop: 'createTime', order: 'descending'}"
-            @current-change="selectionChange"
             style="width: 100%">
             <el-table-column
                 prop="id"
@@ -60,6 +59,11 @@
                 :formatter="formatterUpdateTime"
                 label="更新时间">
             </el-table-column>
+            <el-table-column  min-width="140" label="操作">
+                <template slot-scope="scope">
+                    <el-button type="text" @click.native="editColumn(scope.row)">编辑</el-button>
+                </template>
+            </el-table-column>
         </el-table>
     </div>
 </template>
@@ -87,10 +91,9 @@ export default {
         }
       })
     },
-    selectionChange (data) {
+    editColumn (data) {
       const _this = this
-      _this.$emit('setSelect', !!data)
-      _this.$emit('setSelectData', data)
+      _this.$emit('edit', data)
     },
     formatStatus (row, column) {
       const status = row.status
