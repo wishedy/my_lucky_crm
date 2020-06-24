@@ -82,7 +82,7 @@ export default {
         top: 0;
         bottom: 0;
         left: 0;
-        z-index: 1001;
+        z-index: 2;
         transition: width .28s ease;
         .el-submenu .el-menu-item{
             min-width: 180px;

@@ -100,9 +100,9 @@ export default {
     .adminContent{
         width: 100%;
         min-height: 400px;
-        margin-top:60px ;
+        //margin-top:60px ;
         &.marTop{
-            margin-top:88px;
+            //margin-top:88px;
         }
     }
     .main-container{
@@ -123,11 +123,11 @@ export default {
             transition: margin-left .28s ease;
         }
         .adminHeader{
-            z-index: 0;
-            padding: 0 30px 0 0 !important;
+            //z-index: 1;
+            padding: 0 0 0 0 !important;
             color:#97a8be;
             height: auto !important;
-            position: fixed;
+            //position: fixed;
             top:0;
             width: 100%;
 
@@ -157,7 +157,7 @@ export default {
                 height: 100%;
                 line-height: 50px;
                 padding: 0 20px;
-                margin: 0 150px 0 0;
+                margin: 0 30px 0 0;
                 &:focus{
                     outline: none;
                 }
